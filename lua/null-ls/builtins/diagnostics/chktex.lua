@@ -18,7 +18,7 @@ return h.make_builtin({
             -- Disable printing version information to stderr
             "-q",
             -- Format output
-            "-f%l:%c:%d:%k:%n:%m\n",
+            "-f'%l:%c:%d:%k:%n:%m\n'",
         },
         format = "line",
         check_exit_code = function(code)
